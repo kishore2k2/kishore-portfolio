@@ -1865,3 +1865,32 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+  /**
+	 * clients
+	 */
+   .clients-list {
+    display: flex;
+    justify-content: center;   /* Centers all logos horizontally */
+    align-items: center;       /* Centers them vertically */
+    flex-wrap: wrap;           /* Wraps logos on smaller screens */
+    gap: 20px;                 /* Space between logos */
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .clients-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;              /* Fixed space for each logo */
+    height: 150px;             /* Ensures uniform height */
+  }
+  
+  .clients-item img {
+    max-width: 100%;           /* Prevents stretching beyond container */
+    max-height: 80px;          /* Keeps all logos same visual height */
+    object-fit: contain;       /* Maintains logo proportions */
+  }
+  
